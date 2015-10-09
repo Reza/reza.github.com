@@ -267,7 +267,7 @@
 
 
 <div>
-<figure class="clear"><img src="http://securitywing.com/wp-content/uploads/cloud-privacy-issues.png" alt="" width="600" height="" style="font-weight: bold;"></figure>
+<figure class="clear"><img src=./cloud-privacy-issues.png" alt="" width="600" height="" style="font-weight: bold;"></figure>
 </div>
 <p>By: S.Reza Hashemi</p>
 </div>
@@ -281,14 +281,14 @@
 <p><strong>What is the state of cloud access controls in terms of privacy?</strong><strong>&nbsp;</strong></p>
 <p>Traditional identity based access control models including Mandatory Access Control (MAC), Discretionary Access Control (DAC), and Role Based Access Control (RBAC) make an implicit assumption that the entity enforcing access control policies are also the owner of data. However, this in not true in an untrusted cloud computing environment. Hence, the data should be stored in the encrypted form and access control is performed over the encrypted data.&nbsp;Encryption is a commonly adopted approach to assure data confidentiality. However, It is not sufficient because organizations often have also to enforce access control on the data.</p>
 <p>Figure 1 shows the trust chain used by traditional access control methods. Access control lists (ACL) are established by the object owner or administrator and access to the object is through addition of user to an ACL.</p>
-<p><figure class="clear"><img src="https://reza.files.wordpress.com/2015/10/acl-trust.jpg?w=300&amp;h=132" alt="acl-trust" width="600" height=""></figure></p>
+<p><figure class="clear"><img src="./acl-trust.jpg" alt="acl-trust" width="600" height=""></figure></p>
 <p>Figure 1: ACL Trust chain (Source: NIST Special Publication 800-162, Guide to Attribute Based Access Control (ABAC), p 21)</p>
 <p>With the involvement of the third-party cloud services, a crucial issue is that the identity attributes in the access control policies may reveal privacy-sensitive information about users and organizations and leak confidential information about the content. The confidentiality of the content and the privacy of the users are thus not assured if the identity attributes are not protected.</p>
 <p>It is well known that privacy, both individual as well as organizational, is considered a key requirement in all solutions, including cloud services, for digital identity management. The state of the research and development in this field shows that privacy issues are still unsolved and a major concern in cloud computing. An important requirement is to support fine-grained access control, based on policies specified using identity attributes, over encrypted data.</p>
 <p><strong>Attribute based access control approach in privacy control.</strong></p>
 <p>The most important model in cloud is attribute based access control (ABAC) and has proven to be capable of enforcing MAC, DAC and RBAC policies and provide flexibility requirements for cloud computing. This control is often based on security-relevant properties of users, referred to as identity attributes. These access control systems are referred to as attribute based access control (ABAC) systems. Fine-grained access control is one of the major provisions of attribute based access control (ABAC) in the cloud services.</p>
 <p>Figure 2 shows the&nbsp;trust relationship in ABAC systems. the root of the trust is derived from many sources that provide attributes and policies. There are more complex trust relationships required in this method to work properly but more flexibility and context awareness is provided.</p>
-<p><figure class="clear"><img src="https://reza.files.wordpress.com/2015/10/abac-trust.jpg?w=300&amp;h=149" alt="abac-trust" width="600" height=""></figure></p>
+<p><figure class="clear"><img src="./abac-trust.jpg" alt="abac-trust" width="600" height=""></figure></p>
 <p>Figure 2: ABAC trust chain (Source: NIST Special Publication 800-162, Guide to Attribute Based Access Control (ABAC), p 22)</p>
 <p>Access to cloud resources are protected based on ownership of a specific attribute. This not only includes user credentials as in Role based access control approach but also includes other data such as location, time of access, and different attributes that can be assigned to a profile. In another words, ABAC combines many attributes to make a decision based on the context of the request for access, this context is not just based on the role of a user.</p>
 <p>Multiple privacy contexts can be defined in this approach such as restriction on access to personal data , minimization of the amount of the personal data that is required for provisioning a service, in this scenario the data that may be useful for other future usage is not provided, and finally the use of data is limited to a specific purpose that the data has been gathered or stored for, in this scenario the data usage is restricted to specific purposes and any other use needs data owner consent to be received as an extra attribute.</p>
